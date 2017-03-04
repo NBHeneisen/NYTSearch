@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title></title>
+      <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" />
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://use.fontawesome.com/4784f46468.js"></script>
+      <script src="nytsearch.js"></script>
+    </head>
+
+      <body>
+
+<div class="container"  >
+          <div class="row" id="container1">
+            <h1> <i class="fa fa-newspaper-o" aria-hidden="true"></i>New York Times App</h1>
+          </div>
+
+      <div class="row">
+
+
+        <div class="panel panel-default">
+         <div class="panel-heading">
+           <h3 class="panel-title">Search Paramaters</h3>
+         </div>
+         <div class="panel-body">
+           <div class="input-group">
+                <label for="searchParam">Search Term</label>
+                <input type="text" class="form-control" placeholder="Search Terms" aria-describedby="basic-addon1" id = "searchParam" value=''>
+                </input>
+            </div>
+            <div class="input-group">
+                 <label for="startYear">Start Year(Optional)</label>
+                 <input type="text" class="form-control" placeholder="Search Terms" aria-describedby="basic-addon1" id = "startYear" value=''>
+                 </input>
+             </div>
+              <label for="startYear">Number of Records to Retrieve</label>
+             <div class="input-group">
+              <input type="text" class="form-control" aria-label="...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">5 <span class="caret"></span></button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">10</a></li>
+                  <li><a href="#">15</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+             <div class="input-group">
+                  <label for="endYear">End Year(Optional)</label>
+                  <input type="text" class="form-control" placeholder="Search Terms" aria-describedby="basic-addon1" id = "endYear" value=''>
+                  </input>
+              </div>
+              <button class="btn btn-default" id="searchButton">Search</button>
+              <button class="btn btn-default" id="clearResults">Clear Results</button>
+         </div>
+       </div>
+    </div>
+
+    <div class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Top Articles</h3>
+              </div>
+              <div class="panel-body" id="resultsHere">
+                Panel content
+            </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+  </html>
